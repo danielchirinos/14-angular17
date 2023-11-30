@@ -1,1 +1,15 @@
-<p>user works!</p>,
+<app-title [title]="titleLabel()" />
+
+
+<!-- @if ( user() ) { -->
+    <img [srcset]="user()!.avatar" [alt]="user()!.first_name" [ngStyle]="{'view-transition-name': user()!.first_name}">
+    <section>
+
+        <div>
+            <h3> {{ titleLabel() }} </h3>
+            <p> {{ user()?.email}} </p>
+        </div>
+    </section>
+<!-- }@else {
+    <p>cargando usuario</p>
+} -->

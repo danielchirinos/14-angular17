@@ -5,7 +5,7 @@ import { TitleComponent } from '@shared/title/title.component';
 @Component({
   standalone: true,
   imports: [ CommonModule, TitleComponent],
-  changeDetection:  ChangeDetectionStrategy.OnPush,
+  changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <app-title [title]="currenFramework()" />
 

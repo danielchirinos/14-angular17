@@ -10,12 +10,6 @@ import { TitleComponent } from '@shared/title/title.component';
 })
 export default class DeferViewsComponent { 
 
-    constructor(){
-        const start = Date.now()
-        while( Date.now() - start < 3000 ) {}
-
-        console.log("cargado");
-        
-    }
+    
 
 }
